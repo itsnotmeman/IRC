@@ -1,2 +1,2 @@
 # IRC
-An IRC server.
+An Internet Relay Chat (IRC) server.
