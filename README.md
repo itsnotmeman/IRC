@@ -1,2 +1,2 @@
 # IRC
-An IRC Server.
+An IRC server.
