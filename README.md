@@ -31,7 +31,7 @@ sudo apt install irssi
 2.
 To connect to the server run irssi:
 ```
-irsi -n your_nickname
+irssi -n your_nickname
 ```
 And then type the command:
 ```
@@ -51,15 +51,15 @@ Create a new channel or join the channel if it already exists:
 ```
 
 5.
-Change channel mode to invite only:
+Change the channel's topic:
 ```
-/mode +i
+/topic Topic description here.
 ```
 
 6.
-Change the channels topic:
+Change channel mode to invite only:
 ```
-/topic Topic description here.
+/mode +i
 ```
 
 7.
@@ -92,12 +92,15 @@ Leave irssi:
 /quit
 ```
 
+---
+
 Docs:
-https://irssi.org/documentation/help/cat_Core%20Commands/<br>
+https://irssi.org/documentation/help/cat_Core%20Commands/<br><br>
 Change window in irssi:
 ```
 Ctrl + n
 ```
+<br>
 
 
 ## Connection to the server using nc command:
@@ -106,6 +109,7 @@ Ctrl + n
 To connect to the IRC server with a client, open a new terminal and type "*nc localhost port*"<br>
 
 2.
+Enter the password, nickname and user information.
 ```
 PASS your_password
 NICK your_nickname
@@ -125,15 +129,15 @@ JOIN #channelname
 ```
 
 5.
-Change channel mode to invite only:
+Change the channel's topic:
 ```
-MODE #channelname +i
+TOPIC #channelname :Topic description here.
 ```
 
 6.
-Change the channels topic:
+Change channel mode to invite only:
 ```
-TOPIC #channelname :Topicdescriptionhere.
+MODE #channelname +i
 ```
 
 7.
@@ -156,13 +160,17 @@ KICK #channelname othernick
 
 10.
 Send a private message:
+```
 PRIVMSG recipient_nickname :Your message here
+```
 
 11.
 Leave the IRC server:
 ```
 Ctrl + c
 ```
+
+---
 
 Docs:
 https://datatracker.ietf.org/doc/html/rfc1459<br>
